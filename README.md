@@ -9,7 +9,7 @@ This is a simple project written to explore the JS DOM bindings in Nim.
 Building
 ---------
 
-`nim js src\wheel.nim`
+`nim --warning[CStringConv]:off js --sourceMap:on todoapp.nim`
 
 Installing
 -----------

@@ -92,7 +92,7 @@ proc spin(ev: Event) =
       var rotationEnd = (1 / len(choices) * (i.float + 1))
       # The midpoint of the arc will always be where the svg ends
       var rotation = Math.abs(630 - (rotationStart + rotationEnd) / 2 * 360)
-      svg.style.setProperty("--rotationEnd", fmt("{rotation}deg"))
+      svg.style.setProperty("--rotationEnd", fmt"{rotation}deg")
       break
 
   proc unSpin(ev: Event) =
